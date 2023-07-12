@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <!-- IMAGES -->
+
+    <!-- HTML Images Syntax: <img src="url" alt="alternatetext"> -->
+    <img src="./images/cat.jpg" alt="cat picture">
+
+    <!-- If a browser cannot find an image, it will display the value of the alt attribute -->
+    <img src="wrongname.gif" alt="Flowers in Chania">
+
+    <!-- The width, height, and style attributes are all valid in HTML. -->
+    <img src="./images/cat.jpg" alt="cat picture" width="128" height="128">
+    <img src="./images/cat.jpg" alt="cat picture" style="width:128px;height:128px;"><br>
+
+    <!-- Images as a Link -->
+    <a href="https://github.com/brdmyldz">
+        <img src="./images/cat.jpg" alt="cat picture" style="width:42px;height:42px;">
+    </a>
+
+    <!-- Image Floating -->
+    <p>
+        <img src="./images/cat.jpg" alt="cat picture" style="float:right;width:42px;height:42px;">
+        The image will float to the right of the text.
+    </p>
+        
+    <p>
+        <img src="./images/cat.jpg" alt="cat picture" style="float:left;width:42px;height:42px;">
+        The image will float to the left of the text.
+    </p>
+
+    <!-- IMAGE MAP -->
+    <!--
+        The HTML <map> tag defines an image map. An image map is an image with clickable areas.
+        The areas are defined with one or more <area> tags.
+    -->
+    <img src="./images/cat.jpg" alt="cat picture" usemap="#workmap" width="400" height="379">
+
+    <map name="workmap">
+        <area shape="rect" coords="34,44,270,350" alt="attribute" href="./attributes.html">
+        <area shape="rect" coords="290,172,333,250" alt="colors" href="./colors.html">
+        <area shape="circle" coords="337,300,44" alt="comments" onclick="myFunction()">
+    </map>
+
+    <script>
+        function myFunction() {
+            alert("You clicked the coffee cup!");
+        }
+    </script>
+
+    <!--  BACKGROUND IMAGES -->
+    <!-- A background image can be specified for almost any HTML element. -->
+    <p style="background-image: url('./images/cat.jpg');background-size: 100% 100%;">
+        You can specify background images<br>
+        for any visible HTML element.<br>
+        In this example, the background image<br>
+        is specified for a p element.<br>
+        By default, the background-image<br>
+        will repeat itself in the direction(s)<br>
+        where it is smaller than the element<br>
+        where it is specified. (Try resizing the<br>
+        browser window to see how the<br>
+        background image behaves.
+    </p>
+
+    <!-- THE PICTURE ELEMENT -->
+    <!-- 
+        The HTML <picture> element allows you to display different pictures 
+        for different devices or screen sizes.
+    -->
+
+    <picture>
+        <source media="(min-width: 650px)" srcset="./images/cat.jpg">
+        <img src="./images/cat2.jpeg" style="width:auto;">
+    </picture>
+</body>
+</html>

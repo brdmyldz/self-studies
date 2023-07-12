@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .color:link {
+            color: green;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        .color:visited {
+            color: pink;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        .color:hover {
+            color: red;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        .color:active {
+            color: yellow;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- <a> tag defines a hyperlink -->
+    <a href="https://github.com/brdmyldz">Visit my github!</a><br>
+
+    <!-- target attribute -->
+    <!-- _self opens the document in the same window. Default -->
+    <a href="https://github.com/brdmyldz" target="_self">Visit my github!(_self)</a><br>
+
+    <!-- _blank opens the document in a new window or tab -->
+    <a href="https://github.com/brdmyldz" target="_blank">Visit my github!(_blank)</a><br>
+
+    <!-- _parent opens the document in the parent frame -->
+    <a href="https://github.com/brdmyldz" target="_parent">Visit my github!(_parent)</a><br>
+
+    <!-- _top opens the document in the full body of the window -->
+    <a href="https://github.com/brdmyldz" target="_top">Visit my github!(_top)</a><br>
+
+    <h2>Absolute URL</h2>
+    <p><a href="https://github.com/brdmyldz">Visit my github!</a></p>
+
+    <h2>Relative URL</h2>
+    <p><a href="colors.html">HTML Colors</a></p>
+    
+    <!-- Image as a Link -->
+    <a href="https://github.com/brdmyldz">
+        <img src="images/cat.jpg" alt="cat link" style="width:42px;height:42px;">
+    </a><br>
+
+    <!-- link to email -->
+    <a href="mailto:someone@example.com">Send email</a><br>
+
+    <!-- Button as a Link-->
+    <button onclick="document.location='https://github.com/brdmyldz'">HTML Tutorial</button>
+
+    <!-- Change Link Colors -->
+    <p><a class="color" href="https://github.com/brdmyldz">Visit my github!</a></p>
+
+    <!-- Links can be used as a bookmark to jump to a specific parts of a web page -->
+    <!--
+        Examples:
+        <h2 id="C4">Chapter 4</h2>
+        <a href="#C4">Jump to Chapter 4</a>
+        
+        <a href="html_demo.html#C4">Jump to Chapter 4</a>
+    -->
+</body>
+</html>
