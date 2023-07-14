@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        This will set the viewport of your page, which will give the browser 
+        instructions on how to control the page's dimensions and scaling.
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<body>
+    <!--
+        Responsive Web Design is about using HTML and CSS to automatically resize,
+        hide, shrink, or enlarge, a website, to make it look good on all devices 
+        (desktops, tablets, and phones).
+    -->
+
+    <!-- RESPONSIVE IMAGES -->
+
+    <!-- width: 100% -->
+    <img src="images/cat2.jpeg" style="width:100%;">
+
+    <!-- max-width: 100% -->
+    <img src="images/cat2.jpeg" style="max-width:100%;height:auto;">
+
+    <!-- Show Different Images depending on width -->
+    <picture>
+        <source srcset="images/cat2.jpeg" media="(max-width: 600px)">
+        <img src="./images/cat.jpg" style="width:auto;">
+    </picture>
+
+    <!-- RESPONSIVE TEXT SIZE -->
+
+    <!-- The text size can be set with a "vw" unit, which means the "viewport width". -->
+    <h1 style="font-size:10vw">Hello World</h1>
+
+    <!-- MEDIA QUERIES -->
+    <style>
+        /*
+            The CSS box-sizing property allows us to include the padding 
+            and border in an element's total width and height.
+        */
+
+        * {
+            box-sizing: border-box;
+        }
+        
+        .left {
+            background-color: #2196F3;
+            padding: 20px;
+            float: left;
+            width: 20%; /* The width is 20%, by default */
+        }
+        
+        .main {
+            background-color: #f1f1f1;
+            padding: 20px;
+            float: left;
+            width: 60%; /* The width is 60%, by default */
+        }
+        
+        .right {
+            background-color: #04AA6D;
+            padding: 20px;
+            float: left;
+            width: 20%; /* The width is 20%, by default */
+        }
+        
+        /* Use a media query to add a break point at 800px: */
+        @media screen and (max-width: 800px) {
+            .left, .main, .right {
+                width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+            }
+        }
+    </style>
+    <div class="left">
+        <p>Left Menu</p>
+    </div>
+
+    <div class="main">
+        <p>Main Content</p>
+    </div>
+
+    <div class="right">
+        <p>Right Content</p>
+    </div>
+
+    <!-- RESPONSIVE WEB DESIGN FRAMEWORKS-->
+    <!-- W3.CSS and Bootstrap some of the popular CSS frameworks-->
+</body>
+</html>

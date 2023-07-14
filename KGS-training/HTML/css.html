@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {background-color: powderblue;}
+        h1.internal   {color: green;}
+        p.internal    {color: black;}
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--
+        CSS can be added to HTML documents in 3 ways:
+            Inline - by using the style attribute inside HTML elements
+            Internal - by using a <style> element in the <head> section
+            External - by using a <link> element to link to an external CSS file
+    -->
+
+    <!-- Inline Example -->
+    <h1 style="color:blue;">A Blue Heading</h1>
+    <p style="color:red;">A red paragraph.</p>
+
+    <!-- Internal Example -->
+    <h1 class="internal">This is a heading</h1>
+    <p class="internal">This is a paragraph.</p>
+
+    <!-- External Example -->
+    <h1 class="external">This is a heading</h1>
+    <p class="external">This is a paragraph.</p>
+
+    <!--
+        External style sheets can be referenced with a full URL or 
+        with a path relative to the current web page.
+
+        <link rel="stylesheet" href="https://www.w3schools.com/html/styles.css">
+    -->
+</body>
+</html>
