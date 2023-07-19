@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <!--
+        JavaScript can "display" data in different ways:
+
+            Writing into an HTML element, using innerHTML.
+            Writing into the HTML output using document.write().
+            Writing into an alert box, using window.alert().
+            Writing into the browser console, using console.log().
+    -->
+
+    <!-- innerHTML -->
+    <p id="demo"></p>
+
+    <script>
+    document.getElementById("demo").innerHTML = 5 + 6;
+    </script>
+
+    <!-- document.write() -->
+    <!-- The document.write() method should only be used for testing. -->
+    <script>
+        document.write(5 + 6);
+    </script>
+
+    <!-- Using document.write() after an HTML document is loaded, will delete all existing HTML -->
+    <button type="button" onclick="document.write(5 + 6)">Document.write</button>
+
+    <!-- window.alert() -->
+    <button type="button" onclick="alert(5 + 3);">Alert</button>
+
+    <!-- You can skip the window keyword since window is the global scope object. -->
+    <button type="button" onclick="alert(5 + 12);">Alert 2</button>
+
+    <!-- console.log() -->
+    <script>
+        console.log(5 + 8);
+    </script>
+</body>
+</html>
