@@ -1,3 +1,4 @@
+// @ts-nocheck
 // "use strict"; Defines that JavaScript code should be executed in "strict mode".
 // Watch Out! The "use strict" directive is only recognized at the beginning of a script or a function.
 "use strict";
@@ -28,8 +29,10 @@ function x(p1, p1) {};   // This will cause an error
 
 // --------------------------------------------------------------------------------------------------------
 
+/*
 let x = 010;             // Octal numeric literals are not allowed
-let x = "\010";          // Octal escape characters are not allowed
+let x = "010";          // Octal escape characters are not allowed
+*/
 
 // --------------------------------------------------------------------------------------------------------
 
