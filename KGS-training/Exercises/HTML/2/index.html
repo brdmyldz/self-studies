@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form id="form">
+        <label for="name">First name:</label>
+        <br>
+        <input type="text" name="name" title="Format: Letter only, length between 3 to 10" 
+        pattern="[A-Za-z]{3,10}" required>
+        <br>
+
+        <label for="surname">Last name:</label>
+        <br>
+        <input type="text" name="surname" title="Format: Letter only, length between 3 to 10" 
+        pattern="[A-Za-z]{3,10}" required>
+        <br>
+
+        <label for="email">Email:</label>
+        <br>
+        <input type="email" name="email" minlength="6" maxlength="120" required>
+        <br>
+
+        <label for="phone">Phone number:</label>
+        <br>
+        <input type="tel" name="phone" placeholder="+91-XXX-XXX-XXXX" 
+        pattern="\+91-[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Format: +91-XXX-XXX-XXXX" required>
+        <br>
+
+        <label for="course">Course:</label>
+        <br>
+        <input list="courses" name="course" required>
+        <datalist id="courses">
+            <option value="1st">
+            <option value="2nd">
+            <option value="3rd">
+            <option value="4th">
+            <option value="5th">
+            <option value="6th">
+            <option value="7th">
+            <option value="8th">
+            <option value="9th">
+            <option value="10th">
+            <option value="11th">
+            <option value="12th">
+        </datalist>
+        <br>
+
+        <label for="period">Time Period:</label>
+        <br>
+        <input list="periods" name="period">
+        <datalist id="periods">
+            <option value="1 day">
+            <option value="2 days">
+            <option value="3 days">
+            <option value="4 days">
+            <option value="5 days">
+        </datalist>
+        <br>
+        
+        <label for="date">Submission Date:</label>
+        <br>
+        <input type="date" name="date" required>
+        <br>
+
+        <br>
+        <input type="submit" id="submit" value="Submit">
+    </form>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

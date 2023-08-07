@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <!-- To temporarily fix the favicon.ico error on Chrome-->
+    <link rel="shortcut icon" href="#">
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-child">
+            <form id="form">
+                <label for="name">First name:</label>
+                <br>
+                <input type="text" name="First Name" id="name">
+                <br>
+
+                <label for="surname">Last name:</label>
+                <br>
+                <input type="text" name="Last name" id="surname">
+                <br>
+
+                <label for="email">Email:</label>
+                <br>
+                <input type="email" name="Email" id="email">
+                <br>
+
+                <label for="phone">Phone number:</label>
+                <br>
+                <input type="tel" name="Phone" id="phone" placeholder="+91-XXX-XXX-XXXX">
+                <br>
+
+                <label for="address">Address:</label>
+                <br>
+                <textarea id="address" name="Address" rows="2" cols="17"></textarea>
+                <br>
+
+                <label for="course">Course:</label>
+                <br>
+                <input list="courses" name="Course" id="course">
+                <datalist id="courses">
+                    <option value="1st">
+                    <option value="2nd">
+                    <option value="3rd">
+                    <option value="4th">
+                    <option value="5th">
+                    <option value="6th">
+                    <option value="7th">
+                    <option value="8th">
+                    <option value="9th">
+                    <option value="10th">
+                    <option value="11th">
+                    <option value="12th">
+                </datalist>
+                <br>
+                
+                <label>Subjects:</label><br>
+                <input type="checkbox" class="subjects" name="Subjects" value="English">
+                <label for="lang">English</label>
+                <input type="checkbox" class="subjects" name="Subjects" value="Hindi">
+                <label for="lang">Hindi</label>
+                <input type="checkbox" class="subjects" name="Subjects" value="Math">
+                <label for="lang">Math</label>
+                <input type="checkbox" class="subjects" name="Subjects" value="Science">
+                <label for="lang">Science</label>
+                <br>
+
+                <label for="period">Time Period:</label>
+                <br>
+                <input list="periods" name="Time Period" id="period">
+                <datalist id="periods">
+                    <option value="1 day">
+                    <option value="2 days">
+                    <option value="3 days">
+                    <option value="4 days">
+                    <option value="5 days">
+                </datalist>
+                <br>
+                
+                <label for="date">Submission Date:</label>
+                <br>
+                <input type="date" name="Sumission Date" id="date">
+                <br>
+
+                <br>
+                <input type="submit" id="submit" value="Submit">
+            </form>
+            <p id="message"></p>
+        </div>
+        <div class="flex-child" id="submission">
+        </div>
+    </div>
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
