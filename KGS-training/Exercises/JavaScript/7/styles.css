@@ -1,0 +1,8 @@
+* {
+    box-sizing: border-box;
+}
+
+#mapholder {
+    height: 400px;
+    width: 700px;
+}
