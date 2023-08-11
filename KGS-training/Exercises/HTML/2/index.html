@@ -5,33 +5,33 @@
 </head>
 <body>
     <form id="form">
-        <label for="name">First name:</label>
+        <label for="firstName">First name:</label>
         <br>
-        <input type="text" name="name" title="Format: Letter only, length between 3 to 10" 
+        <input type="text" id="firstName" name="name" title="Format: Letter only, length between 3 to 10" 
         pattern="[A-Za-z]{3,10}" required>
         <br>
 
-        <label for="surname">Last name:</label>
+        <label for="lastName">Last name:</label>
         <br>
-        <input type="text" name="surname" title="Format: Letter only, length between 3 to 10" 
+        <input type="text" id="lastName" name="surname" title="Format: Letter only, length between 3 to 10" 
         pattern="[A-Za-z]{3,10}" required>
         <br>
 
         <label for="email">Email:</label>
         <br>
-        <input type="email" name="email" minlength="6" maxlength="120" required>
+        <input type="email" id="email" name="email" minlength="6" maxlength="120" required>
         <br>
 
         <label for="phone">Phone number:</label>
         <br>
-        <input type="tel" name="phone" placeholder="+91-XXX-XXX-XXXX" 
+        <input type="tel" id="phone" name="phone" placeholder="+91-XXX-XXX-XXXX" 
         pattern="\+91-[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Format: +91-XXX-XXX-XXXX" required>
         <br>
 
         <label for="course">Course:</label>
         <br>
-        <input list="courses" name="course" required>
-        <datalist id="courses">
+        <input list="coursesList" id="course" name="course" required>
+        <datalist id="coursesList">
             <option value="1st">
             <option value="2nd">
             <option value="3rd">
@@ -49,8 +49,8 @@
 
         <label for="period">Time Period:</label>
         <br>
-        <input list="periods" name="period">
-        <datalist id="periods">
+        <input list="periodList" id="period" name="period">
+        <datalist id="periodList">
             <option value="1 day">
             <option value="2 days">
             <option value="3 days">
@@ -61,7 +61,7 @@
         
         <label for="date">Submission Date:</label>
         <br>
-        <input type="date" name="date" required>
+        <input type="date" id="date" name="date" required>
         <br>
 
         <br>
