@@ -1,0 +1,116 @@
+hr {
+    border: 1px solid rgb(57, 68, 77);;
+    margin: 2em 1em;
+}
+
+br {
+    content: "";
+    margin: 5em;
+    display: block;
+    font-size: 24%;
+}
+
+.code-br {
+    content: "";
+    margin: 1em;
+    display: block;
+    font-size: 24%;
+}
+
+.red {
+    color: rgb(255, 152, 153);
+}
+
+
+/* TOP NAVIGATION BAR */
+#top-nav{
+    z-index: 2;
+    background-color: rgb(30, 42, 53);
+    border-bottom: 7px solid rgb(13, 24, 33);
+    text-align: center;
+}
+
+#top-nav .dropdown-menu {
+    background-color: rgb(30, 42, 53);
+    text-align: center;
+}
+
+#top-nav .dropdown-item:hover, #top-nav .nav-link:hover {
+    background-color: rgb(8, 170, 109);
+    color: white;
+}
+
+#top-nav .nav-link, #top-nav .dropdown-item {
+    color: white;
+}
+
+
+
+
+
+/* SIDE NAVIGATION BAR */
+#side-nav {
+    z-index: 1;
+    margin-top: 63px;
+    width: 220px;
+    height: calc(100vh - 63px);
+    overflow-y: auto;
+    background: rgb(20, 32, 43);
+}
+
+#side-nav ul {
+    width: 100%;
+}
+
+#side-nav .nav-link {
+    color: white;
+}
+
+#side-nav .active {
+    background-color: rgb(8, 170, 109);
+}
+
+#side-nav .nav-link:hover {
+    background-color: rgb(8, 170, 109);
+    color: white;
+}
+
+
+
+
+
+/* SIDE NAVIGATION BAR CUSTOM SCROLL BAR */
+#side-nav::-webkit-scrollbar {
+    width: 10px;
+}
+
+#side-nav::-webkit-scrollbar-track {
+    background: rgb(20, 32, 43);
+}
+
+#side-nav::-webkit-scrollbar-thumb {
+    background: rgb(41, 54, 62);
+}
+
+#side-nav::-webkit-scrollbar-thumb:hover {
+    background: rgb(64, 78, 89);
+}
+
+
+
+
+
+/* MAIN SECTION */
+#main-section {
+    margin: 63px 0 0 220px;
+    color: white;
+    background-color: rgb(30, 42, 53);
+}
+
+#main-section .code-container {
+    background-color: rgb(57, 68, 77);
+}
+
+#main-section .code-background {
+    background-color: rgb(20, 32, 43);
+}

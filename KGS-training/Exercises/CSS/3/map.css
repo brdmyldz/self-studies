@@ -1,0 +1,45 @@
+/* TOP NAVIGATION BAR */
+#top-nav{
+    z-index: 2;
+    background-color: rgb(30, 42, 53);
+    border-bottom: 7px solid rgb(13, 24, 33);
+    text-align: center;
+}
+
+#top-nav .dropdown-menu {
+    background-color: rgb(30, 42, 53);
+    text-align: center;
+}
+
+#top-nav .dropdown-item:hover, #top-nav .nav-link:hover {
+    background-color: rgb(8, 170, 109);
+    color: white;
+}
+
+#top-nav .nav-link, #top-nav .dropdown-item {
+    color: white;
+}
+
+
+
+
+
+/* MAIN SECTION */
+#main-section {
+    margin: 63px 0 0 0;
+    color: white;
+    background-color: rgb(30, 42, 53);
+    height: calc(100vh - 63px);
+}
+
+#mapholder {
+    height: 300px;
+    width: 470px;
+}
+
+@media only screen and (min-width: 768px) {
+    #mapholder {
+        height: 500px;
+        width: 780px;
+    }
+}
