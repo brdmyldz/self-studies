@@ -1,4 +1,4 @@
-html, body {
+html,body {
     background-color: rgb(30, 42, 53);
 }
 
@@ -31,18 +31,11 @@ html, body {
 /* MAIN SECTION */
 #main-section {
     margin: 63px 0 0 0;
+    color: white;
     height: calc(100vh - 63px);
 }
 
-
-#mapholder {
-    height: 300px;
-    width: 470px;
-}
-
-@media only screen and (min-width: 768px) {
-    #mapholder {
-        height: 500px;
-        width: 780px;
-    }
+#form-container {
+    width: 80%;
+    max-width: 600px;
 }
