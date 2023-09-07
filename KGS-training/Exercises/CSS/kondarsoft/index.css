@@ -389,6 +389,12 @@ footer .nav-link:hover{
 
 
 /* RESPONSIVE ADJUSTMENTS */
+@media only screen and (max-width: 767px) {
+    #team .card {
+        height: 380px;
+    }
+}
+
 @media only screen and (min-width: 992px) {
     #top-nav #collapsingNavbar {
         display: flex;
