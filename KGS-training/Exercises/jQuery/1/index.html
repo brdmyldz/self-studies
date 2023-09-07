@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="jquery-validation/dist/jquery.validate.js"></script>
+
+    <!-- To temporarily fix the favicon.ico error on Chrome-->
+    <link rel="shortcut icon" href="#">
+</head>
+<body>
+    <form id="form">
+        <label for="name">First name:</label>
+        <br>
+        <input type="text" name="First Name" id="name">
+        <br>
+
+        <label for="surname">Last name:</label>
+        <br>
+        <input type="text" name="Last Name" id="surname">
+        <br>
+
+        <label for="email">Email:</label>
+        <br>
+        <input type="email" name="Email" id="email">
+        <br>
+
+        <label for="phone">Phone number
+            <div class="tooltip">(i)
+                <span class="tooltiptext">
+                    Valid entry patterns:
+                    <br>
+                    1234567890
+                    <br>
+                    123-456-7890
+                    <br>
+                    (123) 456-7890
+                    <br>
+                    123 456 7890
+                    <br>
+                    123.456.7890
+                    <br>
+                    +91 (123) 456-7890
+                </span>
+            </div>:
+        </label>
+        <br>
+        <input type="tel" name="Phone" id="phone">
+        <br>
+
+        <label for="address">Address:</label>
+        <br>
+        <textarea id="address" name="Address" rows="2" cols="17"></textarea>
+        <br>
+
+        <label for="course">Course:</label>
+        <br>
+        <input list="courses" name="Course" id="course">
+        <datalist id="courses">
+            <option value="1st">
+            <option value="2nd">
+            <option value="3rd">
+            <option value="4th">
+            <option value="5th">
+            <option value="6th">
+            <option value="7th">
+            <option value="8th">
+            <option value="9th">
+            <option value="10th">
+            <option value="11th">
+            <option value="12th">
+        </datalist>
+        <br>
+        
+        <label>Subjects:</label><br>
+        <input type="checkbox" class="subjects" id="eng" name="Subjects" value="English">
+        <label for="eng">English</label>
+        <input type="checkbox" class="subjects" id="hin" name="Subjects" value="Hindi">
+        <label for="hin">Hindi</label>
+        <input type="checkbox" class="subjects" id="math" name="Subjects" value="Math">
+        <label for="math">Math</label>
+        <input type="checkbox" class="subjects" id="science" name="Subjects" value="Science">
+        <label for="science">Science</label>
+        <br>
+
+        <label for="period">Time Period:</label>
+        <br>
+        <input list="periods" name="Time Period" id="period">
+        <datalist id="periods">
+            <option value="1 day">
+            <option value="2 days">
+            <option value="3 days">
+            <option value="4 days">
+            <option value="5 days">
+        </datalist>
+        <br>
+        
+        <label for="date">Submission Date:</label>
+        <br>
+        <input type="date" name="Submission Date" id="date">
+        <br>
+
+        <br>
+        <input type="submit" id="submit" value="Submit">
+    </form>
+    <p id="message"></p>
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
